@@ -1,7 +1,7 @@
 {
   "name": "drinkproject",
   "version": "1.0.0",
-  "description": "cocktails",
+  "description": "cocktail",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,7 @@
     "url": "git+https://github.com/Evalyne306/drinkproject.git"
   },
   "keywords": [
-    "javascript",
-    "css",
-    "html"
+    "css"
   ],
   "author": "Evalyne Wanjiku",
   "license": "ISC",

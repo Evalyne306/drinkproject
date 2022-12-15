@@ -5,27 +5,28 @@
     font-family: 'Franklin Gothic Medium';
 }
 
-body{
+/* body{
     height:100vh;
     background-color: rgb(175, 100, 8);
-}
+} */
 .container{
 position: absolute;
 transform: translate(-50% -50%);
-top: 5%;
-left: 5%;
+top: 2%;
+left: 8%;
 width: 90vw;
 max-width: 37.5em;
-background-color: whitesmoke;
+background-color: rgb(23, 131, 177);
 padding: 1.8em;
-box-shadow: 0 1em 3em rgba(58, 37, 37);
 border-radius: 0.9em;
+height: 100vh;
 }
 .search-container {
     display:grid;
     grid-template-columns:9fr 3fr ;
     gap: 1em;
     margin-bottom: 1.2em;
+    
 }
 .search-container input{
     font-size: 1em;
@@ -41,11 +42,107 @@ border-radius: 0.9em;
 .search-container button{
     font-size: 1em;
     border-radius: 2em;
-    background-color: rgb(219, 144, 58);
+    background-color: rgb(244, 217, 9);
     border: none;
     outline: none;
-    color: white;
+    color: rgb(11, 10, 10);
+    font-weight: bold;
+    
+}
+.bgImage{
+    background-size: 100%;
+    text-align: center;
+    width: 48%;
+    margin-left: 800px;
+    margin-right: 5px;
+    border-radius: 80px;
+    opacity: 0.2;
+    height: 90vh;  
+    margin-top: 0px; 
+    
 }
 #front{
-    background: url();
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
+    padding-top: px;
+    text-align: center;
+    margin-bottom: 0px; 
+    height: 100px;
 }
+#drink-section{
+    width: 533px;
+    height: 50px;
+    background: rgb(23, 131, 177);
+    margin-top: 40px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 25px; 
+    font-family: 'Segoe UI';
+    
+
+}
+#drink-section img{
+    width:100% ;
+    height: auto;
+}
+.pageBody{
+position: absolute;
+transform: translate(-50% -50%);
+top: 2%;
+left: 8%;
+background-color: rgb(23, 131, 177);
+padding: 1.8em;
+height: 100vh;
+width: 1650px;
+text-align: center;
+}
+#ingredients{
+    width: 990px;
+    height: 880px;
+    background: rgb(23, 131, 177);
+    padding-top: 20px;
+    padding-left: 80px;
+    text-align: center;
+    margin-bottom: 1000px;  
+    color: rgb(8, 8, 8);
+    font-size: 30px; 
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 620px;
+    text-align: left;
+    word-spacing: 10px;
+    background-image:url("HD-wallpaper-neon-cocktail-cocktails-colors-thumbnail.jpg");
+    background-size: cover;
+    font-weight: bolder;
+    border-radius: 50px;
+    
+    
+}
+#instructions{
+    width: 1000px;
+    height: 550px;
+    background: rgb(213, 216, 22);
+    margin-top: 250px;
+    padding-top: 0px;
+    padding-left: 80px;
+    text-align: center;
+    margin-bottom: 1000px;  
+    color: rgb(5, 5, 5);
+    font-size: 25px; 
+    font-family: 'Segoe UI';
+    margin-left: -80px;
+    text-align: left;
+
+}
+h2{
+    color: rgb(249, 249, 245);
+}
+h4{
+    color: red;
+}
+h1{
+    color: black;
+    font-size: 50px;
+    padding-top: 20px;
+    
+} 
