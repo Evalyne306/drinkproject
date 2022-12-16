@@ -2,6 +2,7 @@
 
  let outcome =document.getElementById("outcome");
  let searchButton = document.getElementById("searchbtn");
+ 
 //  let url ="https://www.thecocktaildb.com/api/json/v1/1/random.php"
  let userText = document.getElementById("user-text").value;
 let getInfo = ()=>{
@@ -15,6 +16,8 @@ let getInfo = ()=>{
        
 //  
 // console.info("cocktails loaded");  
+
+
 
 function getRandomCocktails(){
 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -37,7 +40,10 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     console.log('Fetch Error :-S', err);
     });  
 }
+
 getRandomCocktails()
+
+
 
 function displayRandomCocktail(cocktail){
  console.log(cocktail.drinks[0])
