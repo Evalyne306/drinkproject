@@ -64,7 +64,7 @@ height: 100vh;
 #front{
     background: rgb(255, 255, 255);
     margin-left: 10px;
-    padding-top: px;
+    padding-top: 0px;
     text-align: center;
     margin-bottom: 0px; 
     height: 100px;
@@ -90,25 +90,24 @@ height: 100vh;
 position: absolute;
 transform: translate(-50% -50%);
 top: 2%;
-left: 8%;
+left: 0%;
 background-color: rgb(23, 131, 177);
 padding: 1.8em;
 height: 100vh;
-width: 1650px;
+width: 2000px;
 text-align: center;
 }
 #ingredients{
     width: 990px;
     height: 880px;
     background: rgb(23, 131, 177);
-    padding-top: 20px;
+    padding-top: 0px;
     padding-left: 80px;
-    text-align: center;
     margin-bottom: 1000px;  
     color: rgb(8, 8, 8);
     font-size: 30px; 
     font-family: 'Franklin Gothic Medium';
-    margin-left: 620px;
+    margin-left: 800px;
     text-align: left;
     word-spacing: 10px;
     background-image:url("HD-wallpaper-neon-cocktail-cocktails-colors-thumbnail.jpg");
@@ -136,6 +135,7 @@ text-align: center;
 }
 h2{
     color: rgb(249, 249, 245);
+    
 }
 h4{
     color: red;
@@ -143,6 +143,10 @@ h4{
 h1{
     color: black;
     font-size: 50px;
-    padding-top: 20px;
-    
+    padding-top: 10px;   
 } 
+h5{
+    color: black;
+    font-size: 21px;
+    font-style: italic;
+}

@@ -1,9 +1,12 @@
 
 
-//  let outcome =document.getElementById("outcome");
-//  let searchButton = document.getElementById("searchbtn");
-//  let url ="https://api.npoint.io/87c45ca63ee422e2ccee/drinks"
-//  let userText = document.getElementById("user-text").value;
+ let outcome =document.getElementById("outcome");
+ let searchButton = document.getElementById("searchbtn");
+//  let url ="https://www.thecocktaildb.com/api/json/v1/1/random.php"
+ let userText = document.getElementById("user-text").value;
+let getInfo = ()=>{
+
+
 
 //     fetch(url)
 //     .then((res)=>res.json())
@@ -11,11 +14,8 @@
 //         console.log(data)
        
 //  
-console.info("cocktails loaded");  
-// document.addEventListener("prechange",function(event){
-//     document.querySelector("")
-//     .innerHTML = event.tabItem.getAttribute("label");
-// });
+// console.info("cocktails loaded");  
+
 function getRandomCocktails(){
 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     .then(
@@ -64,11 +64,14 @@ function displayRandomCocktail(cocktail){
     ingredients.appendChild(ingredient)
     
 }  
-let instructions = document.createElement("i");
+let instructions = document.createElement("h5");
 instructions.innerHTML = cocktail.drinks[0].strInstructions;
 
 ingredients.appendChild(instructions);
 
 }
 
-
+};
+window.addEventListener("load", getInfo);
+searchButton.addEventListener("click",getInfo);
+document.querySelector("#drink-section") = cocktail.drinks[0].strDrink;
