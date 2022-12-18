@@ -6,73 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail App</title>
     <link rel="stylesheet" href="style.css">
-   
-    
  </head>
  <body>
-   <div id="form">
-   <h1 style="text-align:center;">
-      Welcome!!! You're here.
-   </h1>
-   <center>
-    
-       <form class="center">
+    <!---------------------------------------------------------------------------->
+    <div style="background-color: yellow;" id ="form">
+        <h1 style="text-align:center;">
+            OCEAN SUNSET
+            
+        </h1>
+        <h4 style ="text-align: center;"><em>Where beautiful moments await.</em></h4>
+        <center>
+         
+            <form id="center">
+             
+            <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td colspan="3">
+                    <h1 style="text-align:center;">
+                        Login
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color:black ;">Username</h2>
+                </td>
+                <td width="10">
+                </td>
+                <td>	
+                    <input type="text" name="userName" autofocus="autofocus" style="font-size:18px; text-indent:5px; height: 50px; width: 600px; color: black;" placeholder="Enter your Username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color:black ;">Password</h2>
+                </td>
+                <td width="10">
+                </td>
+                <td>
+                    <input type="password" name="passWord" autofocus="autofocus" style="font-size:18px; text-indent:5px; height: 50px; width: 600px;color: black;" placeholder="Enter your Password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;">
+                <br />
+                    <input type="button" id="btnlogin" value="Login" style="margin-right:20px; border-radius:4px; background-color:skyblue; font-size:18px; cursor:pointer;height: 30px; width: 100px; ">
+                    <input type="reset" value="Reset" style="font-size:18px; cursor:pointer; border-radius:4px; background-color:orange;height: 30px; width: 100px; ">
+                <br />
+                <br />
+                </td>
+            </tr>
+        </table>
+         
+        </form>
         
-       <table cellpadding="5" cellspacing="5">
-       <tr>
-           <td colspan="3">
-               <h1 style="text-align:center;">
-                   Login
-               </h1>
-           </td>
-       </tr>
-       <tr>
-           <td>
-               <h2>Username</h2>
-           </td>
-           <td width="10">
-           </td>
-           <td>	
-               <input type="text" name="userName" autofocus="autofocus" style="font-size:18px; text-indent:5px;" placeholder="Enter your Username">
-           </td>
-       </tr>
-       <tr>
-           <td>
-               <h2>Password</h2>
-           </td>
-           <td width="10">
-           </td>
-           <td>
-               <input type="password" name="passWord" autofocus="autofocus" style="font-size:18px; text-indent:5px;" placeholder="Enter your Password">
-           </td>
-       </tr>
-       <tr>
-           <td colspan="3" style="text-align:center;">
-           <br />
-               <input type="button" id="toggle" value="Login" onClick="loginPage(this.form)" style="margin-right:20px; border-radius:4px; background-color:skyblue; font-size:18px; cursor:pointer;">
-               <input type="reset" value="Reset" style="font-size:18px; cursor:pointer; border-radius:4px; background-color:orange;">
-           <br />
-           <br />
-           </td>
-       </tr>
-   </table>
-    
-   </form>
-   
-   </center>
-</div>
-   <main id="app" >
+        </center>
+        </div>
+    <!--------------------------------------->
+   <main id="app" hidden>
     <div id ="page" class="pageBody"> 
   <div id="ingredients">
    <h2>INGREDIENTS & INSTRUCTIONS.</h2>
 
-   </div>
+   </div> 
    </div>
    <div  class="container">
      <div class="search-container"> 
          <input type="text" 
          id="user-text" value="magarita"
-         placeholder="search for a Cocktail here..." onchange="myFunction(this.value)">
+         placeholder="search for a Cocktail here...">
          <button type="button" id="searchButton" >SEARCH </button> 
    </div>
 
@@ -89,26 +91,6 @@
  </div> 
 </main>
     <script src="index.js" language="javascript">
-    const targetDiv = document.getElementById("app");
-    const btn = document.getElementById("toggle");
-    btn.onclick = function () {
-      if (targetDiv.style.display !== "none") {
-        targetDiv.style.display = "none";
-      } else {
-        targetDiv.style.display = "block";
-      }
-    };
-
-      function loginPage(form) {
-    if (form.userName.value=="username") { 
-    if (form.passWord.value=="password") {              
-    window.location="https://developer.okta.com/blog/2018/06/08/add-authentication-to-any-web-page-in-10-minutes" 
-    } else {
-    alert("Incorrect detail Password")
-    }
-    } else {  alert("Incorrect detail Username")
-    }
-    }
     </script>
  </body>
 </html>

@@ -1,6 +1,13 @@
 
  let getInfo = ()=>{
-
+const form = document.getElementById("form")
+const app = document.getElementById("app")
+const btnlogin = document.getElementById("btnlogin")
+btnlogin.addEventListener("click",()=>{
+    app.removeAttribute('hidden')
+    app.style.display = "flex"
+    form.style.display = "none"
+})
 function getRandomCocktails(){
 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     .then(
