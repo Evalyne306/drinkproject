@@ -1,23 +1,5 @@
 
-
- let outcome =document.getElementById("outcome");
- let searchButton = document.getElementById("searchbtn");
- 
-//  let url ="https://www.thecocktaildb.com/api/json/v1/1/random.php"
- let userText = document.getElementById("user-text").value;
-let getInfo = ()=>{
-
-
-
-//     fetch(url)
-//     .then((res)=>res.json())
-//     .then((data)=>{
-//         console.log(data)
-       
-//  
-// console.info("cocktails loaded");  
-
-
+ let getInfo = ()=>{
 
 function getRandomCocktails(){
 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -79,5 +61,3 @@ ingredients.appendChild(instructions);
 
 };
 window.addEventListener("load", getInfo);
-searchButton.addEventListener("click",getInfo);
-document.querySelector("#drink-section") = cocktail.drinks[0].strDrink;
