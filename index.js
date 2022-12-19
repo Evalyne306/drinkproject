@@ -2,13 +2,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
 
 
-const container = document.getElementById("container");
+//displaying the login ang sign up form while hidding the app itself
 const signup = document.getElementById("signup")
 const login = document.getElementById("login")
 const app = document.getElementById("app")
 const btnsignup = document.getElementById("btnsignup")
 const btnlogin = document.getElementById("btnlogin")
+const homepage = document.getElementById("homepage")
+const register = document.getElementById("register")
+const contactus = document.getElementById("contactus")
+const contact = document.getElementById("contact")
 
+contact.addEventListener('click',(e)=>{
+e.preventDefault() 
+
+contactus.removeAttribute("hidden")
+contactus.style.display = "block"
+
+})
+
+
+//homepage buttons
+register.addEventListener('click',(e)=>{
+    e.preventDefault()
+homepage.style.display = "none" 
+signup.removeAttribute("hidden")
+signup.style.display = "block"
+})
+
+
+//sign up form displaying first
 btnsignup.addEventListener('click',(event)=>{
     event.preventDefault()
     login.removeAttribute('hidden')
@@ -17,6 +40,7 @@ btnsignup.addEventListener('click',(event)=>{
     signup.style.display = "none"
     
 })
+//login form displaying second
 btnlogin.addEventListener('click',(event)=>{
     event.preventDefault()
     login.style.display ="none"
@@ -25,7 +49,7 @@ btnlogin.addEventListener('click',(event)=>{
     app.removeAttribute('hidden')
 
 })
-
+//displaying random images on click of the load to view more images button
 const loadimages = document.getElementById("loadimages")
 loadimages.addEventListener('click',(event)=>{
 event.preventDefault()
@@ -36,7 +60,7 @@ const drinkSection = document.getElementById("drink-section")
 drinkSection.innerHTML = ""
 })
 
-//adding serching function
+//adding serching function to the search drink button
 const search = document.getElementById("searchButton")
 const usertext = document.getElementById("user-text")
 search.addEventListener('click',(event)=>{
@@ -83,7 +107,7 @@ drinkSection.innerHTML = ""
         })
     })
 })
-
+//fetching api for the images, the ingredients and instructions
 const getInfo = ()=>{
 
 function getRandomCocktails(){

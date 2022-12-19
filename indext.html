@@ -9,13 +9,37 @@
     
  </head>
  <body style="background-color: rgb(23, 131, 177);">
-    
-   <div id="bothForms" class="twoForms">
+   <div id="homepage">
+    <div class="navbar">
+    <a id="register" href="#">Register</a>
+    <a id="home" href="#">Home</a>
+    <a id="about" href="#">About us</a>
+    <a id="contact" href="#">Contact us</a>
+    <a id="gallery" href="https://pixabay.com/images/search/cocktail/">gallery</a>
+</div>
+<div id="textbox">
+<h1 style="text-align:center;">
+    OCEAN SUNSET
+</h1>
+<h4 style ="text-align: center;"><em>Where beautiful moments await.</em></h4>
+<div id="contactus" hidden>
+    Your name:<br><input type="text" name="realname"><br><br>
+    Your email:<br><input type="text" name="email">
+    Your comments:<br>
+    <textarea name="comments" rows="15" cols="50">
+    </textarea>
+    <input type="submit" value="Submit">
+    </div>
+</div>
+    <img src="5365209-margarita-cocktail-Chef-Mo-1x1-1-3f296c6ac4fc47d89d35148d0d5dd519.webp"style="object" alt=""/>
+   
+</div>
+
+   <div id="bothForms" class="twoForms" >
      <!------------sign up-------------------->
-     <div style="background-color:rgb(244, 217, 9)" id="signup">
+     <div style="background-color:rgb(244, 217, 9)" id="signup" hidden>
         <h1 style="text-align:center;">
             OCEAN SUNSET
-            
         </h1>
         <h4 style ="text-align: center;"><em>Where beautiful moments await.</em></h4>
         <center>
@@ -142,7 +166,7 @@
         </div>
         
     <!------------main app--------------------------->
-   <main id="app"hidden>
+   <main id="app" hidden>
     <div id ="page" class="pageBody"> 
   <div id="ingredients">
     
@@ -153,20 +177,19 @@
    <div  class="container">
      <div class="search-container"> 
          <input type="text" 
-         id="user-text" value="magarita"
+         id="user-text" value="Poppy"
          placeholder="search for a Cocktail here...">
-         <button type="submit" id="searchButton" >SEARCH </button> 
+         <button type="submit" id="searchButton">SEARCH DRINK </button> 
    </div>
 
    <div id="front">
       <h1>OCEAN SUNSET</h1>
       <h4><em>Where beautiful moments await.</em></h4>
       <div id="drink-section">
- <div id="outcome"></div>
       </div>
       <div>
         <form>
-            <input type = "submit" id="loadimages" value="Click here to load more images">
+            <input type = "submit" id="loadimages" style="font-size: large;" value="Click here for more images">
         </form>
       </div> 
    </div>
