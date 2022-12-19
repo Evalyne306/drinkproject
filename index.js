@@ -31,19 +31,60 @@ loadimages.addEventListener('click',(event)=>{
 event.preventDefault()
 getInfo()
 const ingredients = document.getElementById("ingredients")
-ingredients.innerHTML = ""
+ingredients.innerHTML = "<h2>INGREDIENTS & INSTRUCTIONS.</h2>"
 const drinkSection = document.getElementById("drink-section")
 drinkSection.innerHTML = ""
 })
 
+//adding serching function
+const search = document.getElementById("searchButton")
+const usertext = document.getElementById("user-text")
+search.addEventListener('click',(event)=>{
+    event.preventDefault()
+    const value = usertext.value
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${value}`)
+    .then((response)=>response.json())
+    .then((item)=>{
+        const ingredients = document.getElementById("ingredients")
+ingredients.innerHTML = "<h2>INGREDIENTS & INSTRUCTIONS.</h2>"
+const drinkSection = document.getElementById("drink-section")
+drinkSection.innerHTML = ""
+    item.drinks.forEach(newItem=>{
+        
+        const drinkSection = document.querySelector("#drink-section")
+        const drinkName = document.createElement("h2");
+        drinkName.innerHTML = newItem.strDrink;
+        drinkSection.appendChild(drinkName);
+       
+        const img = document.createElement("img")
+        img.src = newItem.strDrinkThumb;
+       
+        drinkSection.appendChild(img);
+        for(let i=1; i<16; i++){
+           console.log();
+           if(newItem[`strIngredient${i}`] == null || newItem[`strIngredient${i}`]==""){
+               break;
+           }
+           
+           const ingredients = document.querySelector("#ingredients")
+           const ingredient = document.createElement("li")
+           ingredient.innerHTML = newItem[`strMeasure${i}`] +":" + newItem[`strIngredient${i}`]
+       
+           ingredients.appendChild(ingredient)
+           
+       }  
+       const instructions = document.createElement("h5");
+       instructions.innerHTML = newItem.strInstructions;
+       
+       ingredients.appendChild(instructions);
+       
+    
+
+        })
+    })
+})
+
 const getInfo = ()=>{
-
-
-
-
-
-
-
 
 function getRandomCocktails(){
 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
