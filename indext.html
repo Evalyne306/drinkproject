@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail App</title>
     <link rel="stylesheet" href="style.css">
+    
  </head>
- <body>
-    <!---------------------------------------------------------------------------->
-    <div style="background-color: yellow;" id ="form">
+ <body style="background-color: rgb(23, 131, 177);">
+   <div id="bothForms" class="twoForms">
+     <!------------sign up-------------------->
+     <div style="background-color:rgb(244, 217, 9)" id="signup">
         <h1 style="text-align:center;">
             OCEAN SUNSET
             
@@ -17,12 +19,87 @@
         <h4 style ="text-align: center;"><em>Where beautiful moments await.</em></h4>
         <center>
          
-            <form id="center">
+            <form class="hidden" id="form" >
              
             <table cellpadding="5" cellspacing="5">
             <tr>
                 <td colspan="3">
-                    <h1 style="text-align:center;">
+                    <h1 style="text-align:center; text-decoration: overline;font-size: larger;">
+                        Register here.
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color:black ;">First name</h2>
+                </td>
+                <td width="10">
+                </td>
+                <td>	
+                    <input type="text" name="userName" autofocus="autofocus" style="font-size:18px; text-indent:5px; height: 50px; width: 600px; color: black;" placeholder="Enter your First name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color:black ;">Second name</h2>
+                </td>
+                <td width="10">
+                </td>
+                <td>	
+                    <input type="text" name="userName" autofocus="autofocus" style="font-size:18px; text-indent:5px; height: 50px; width: 600px; color: black;" placeholder="Enter your Second name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color:black ;">Password</h2>
+                </td>
+                <td width="10">
+                </td>
+                <td>
+                    <input type="password" name="passWord" autofocus="autofocus" style="font-size:18px; text-indent:5px; height: 50px; width: 600px;color: black;" placeholder="Enter your Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color:black ;"> Confirm Password</h2>
+                </td>
+                <td width="10">
+                </td>
+                <td>
+                    <input type="password" name="passWord" autofocus="autofocus" style="font-size:18px; text-indent:5px; height: 50px; width: 600px;color: black;" placeholder="Confirm password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;">
+                <br />
+                    <input type="button" id="btnsignup" value="Signup" style="margin-right:20px; border-radius:4px; background-color:skyblue; font-size:18px; cursor:pointer;height: 30px; width: 100px; ">
+                    <input type="reset" value="Submit" style="font-size:18px; cursor:pointer; border-radius:4px; background-color:orange;height: 30px; width: 100px; ">
+                <br />
+                <br />
+                </td>
+            </tr>
+        </table>
+         
+        </form>
+        
+        </center>
+        </div>
+    </div>
+    <!----------------------------login form------------------------------------------------>
+    <div style="background-color:rgb(244, 217, 9)" id ="login"hidden>
+        <h1 style="text-align:center;">
+            OCEAN SUNSET
+            
+        </h1>
+        <h4 style ="text-align: center;"><em>Where beautiful moments await.</em></h4>
+        <center>
+         
+            <form class="hidden">
+             
+            <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td colspan="3">
+                    <h1 style="text-align:center;text-decoration: overline;font-size: larger;">
                         Login
                     </h1>
                 </td>
@@ -62,8 +139,9 @@
         
         </center>
         </div>
-    <!--------------------------------------->
-   <main id="app" hidden>
+        
+    <!------------main app--------------------------->
+   <main id="app"hidden>
     <div id ="page" class="pageBody"> 
   <div id="ingredients">
    <h2>INGREDIENTS & INSTRUCTIONS.</h2>
@@ -75,22 +153,26 @@
          <input type="text" 
          id="user-text" value="magarita"
          placeholder="search for a Cocktail here...">
-         <button type="button" id="searchButton" >SEARCH </button> 
+         <button type="submit" id="searchButton" onclick="" >SEARCH </button> 
    </div>
 
    <div id="front">
       <h1>OCEAN SUNSET</h1>
       <h4><em>Where beautiful moments await.</em></h4>
-      <section id="drink-section">
+      <div id="drink-section">
  <div id="outcome"></div>
-      </section>
+      </div>
       <div>
-         <button type="button" id="reloadbtn" onClick="window.location.reload();">CLICK HERE TO LOAD MORE IMAGES </button> 
+        <form>
+            <input type = "submit" id="loadimages" value="Click here to load more images">
+        </form>
       </div> 
    </div>
  </div> 
 </main>
     <script src="index.js" language="javascript">
-    </script>
+
+          
+ </script>
  </body>
 </html>
