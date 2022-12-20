@@ -27,36 +27,18 @@ Alternative One
 -Open the folder you want to clone to
 -go to this repo using this link;
 
-*
+    https://github.com/Evalyne306/drinkproject
 
 - click the code button and copy the link, ensure SSHis selected before copying
 -once you have copied go back to your terminal and clone the repo using the followng;
 
-*
+git clone git@github.com:Evalyne306/drinkproject.git
 
 -Be patient as it creates a copy on your local machine for you
 -you can use command "ls" to check the created repo folder
 -Change directory to the repo folder;
 
-cd Student-Grade-Generator
-
--(Optional) Open it in Visual Studio Code
--go to the html files and right click and select ;
-
-open with live server
-from there you can interact with the programs, either the grade generator or the speed detector or the nhif calculator.
-
-Alternative Two
--On the tp right corner of ths page there is a button labelled Fork.
-Click on that button to fork the repo to your own account.
--Take on the process in Alternative one above.
--Remember to replace your username when cloning
-
-*
-
--once you have git cloned it is now available to your local machine
--(Optional) Open it in Visual Studio Code
--go to the html files and right click and select ;
+cd drinkproject
 
 open with live server
 from there you can interact with the programs, either the grade generator or the speed detector or the nhif calculator.
