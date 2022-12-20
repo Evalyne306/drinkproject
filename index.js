@@ -63,7 +63,7 @@ btnsignup.addEventListener('click',(event)=>{
     login.style.display = "block"
     app.style.display = "none"
     signup.style.display = "none"
-    
+    homepage.style.display = "none"
     
 })
 //login form displaying second
