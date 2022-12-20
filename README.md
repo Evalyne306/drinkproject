@@ -7,7 +7,8 @@ This is a cocktail app, where the end user will benefit in a number of ways.
 -They will be able to run a drink entry and comfirm whether we have it in our menu or not.
 -They will be able to post their suggestions, their reviews, their complaints as well as their compliments on the contact us link on the home page.
 -The clients will be able to log in to the site and have an option of saving their logins.
-
+-The end user will be able to like their favourite drinks.
+-The user will be able to click on the links on the navigation bar of which they will display their respective contents.
 
 ## Getting started using a link
 To visit the web page directly you can use the link below or alternatively you can open using the terminal as directed below;
