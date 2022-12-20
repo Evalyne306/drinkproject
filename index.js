@@ -12,6 +12,12 @@ const homepage = document.getElementById("homepage")
 const register = document.getElementById("register")
 const contactus = document.getElementById("contactus")
 const contact = document.getElementById("contact")
+const feedback = document.getElementById("feedback")
+
+feedback.addEventListener('click',(event)=>{
+    event.preventDefault()
+    contactus.style.display = "none"
+})
 
 contact.addEventListener('click',(e)=>{
 e.preventDefault() 
