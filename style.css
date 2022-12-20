@@ -11,7 +11,7 @@ position: absolute;
 transform: translate(-50% -50%);
 top: 2%;
 left: 8%;
-width: 90vw;
+width: 95vw;
 max-width: 37.5em;
 background-color: rgb(23, 131, 177);
 padding: 1.8em;
@@ -177,7 +177,7 @@ h5{
     width: 20%; 
   }
   a:link, a:visited {
-    background-color: white;
+    background-color: rgb(224, 238, 238);
     color: black;
     border: 2px solid rgb(23, 131, 177);
     padding: 10px 20px;
@@ -187,7 +187,7 @@ h5{
   }
   a:hover, a:active {
     background-color: rgb(23, 131, 177);
-    color: white;
+    color: rgb(15, 171, 185);
   }
   img {
     width: 100vh;
@@ -219,16 +219,7 @@ text-align: justify;
 padding-left: 50px;
 padding-top: 100px;
 }
-/* #about{
-    background: rgb(253, 17, 209);
-    margin-left: 0px;
-    padding-top: 0px;
-    text-align: center;
-    margin-bottom: 0px; 
-    height: 100px;
-    width: 400px;
-    margin-left: 1000px;
-} */
+
 #about{
 text-align: end;
 margin-top:40px;
@@ -263,13 +254,9 @@ margin-left: 1000px;
 .circle{
 position: absolute;
 left: 9%;
-top: 30%;
-margin-top: 0px;
-margin-left: 0px;
-box-shadow: 0 2px 4px black;
+top: 26%;
 width: 80px;
 height: 80px;
-background-color:white;
 border-radius: 50%;
 padding:9px;
 
@@ -281,11 +268,16 @@ padding:9px;
     transition: .4s; 
 }
 
-.circle:hover i{
-color :red;
+.bton{
+    background: transparent;
+    border: none;
+    font-size: 87px;
+    outline: none;
+    color: grey;
 }
 
-.fas{
-    color: red;
-    transition: .4s ;
+.bton i:hover{
+    cursor: pointer;
+    color: white;
 }
+

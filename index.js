@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
 
-
 //displaying the login ang sign up form while hidding the app itself
 const signup = document.getElementById("signup")
 const login = document.getElementById("login")
@@ -17,6 +16,21 @@ const aboutus = document.getElementById("aboutus")
 const about = document.getElementById("about")
 const homeid = document.getElementById("homeid")
 const home = document.getElementById("home")
+const btnvar = document.getElementById("like")
+
+//event listener for the like button, on click to change color to red
+like.addEventListener('click',(e)=>{
+    e.preventDefault()
+   
+        if(btnvar.style.color == "red"){
+            btnvar.style.color = "grey"
+    }
+    else {
+        btnvar.style.color = "red"
+    }
+    
+
+})
 //the home link onclick event listener
 home.addEventListener('click',(event)=>{
     event.preventDefault()
@@ -79,11 +93,13 @@ btnlogin.addEventListener('click',(event)=>{
 const loadimages = document.getElementById("loadimages")
 loadimages.addEventListener('click',(event)=>{
 event.preventDefault()
+btnvar.style.color = "grey"
 getInfo()
 const ingredients = document.getElementById("ingredients")
 ingredients.innerHTML = "<h2>INGREDIENTS & INSTRUCTIONS.</h2>"
 const drinkSection = document.getElementById("drink-section")
 drinkSection.innerHTML = ""
+
 })
 
 //adding serching function to the search drink button
