@@ -229,7 +229,7 @@ padding-top: 100px;
 text-align: end;
 margin-top:40px;
 font-size: 25px;
-font-style: italic;
+
 font-weight: bold;
 background-color: transparent;
 margin-left: 0px;
@@ -237,8 +237,9 @@ padding-top: 0px;
 text-align: center;
 margin-bottom: 0px; 
 height: 800px;
-width: 800px;
-margin-left: 1000px;
+width: 700px;
+margin-left: 1050px;
+color: rgb(18, 17, 16);
 
 }
 #homeid{
