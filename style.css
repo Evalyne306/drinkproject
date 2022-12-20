@@ -5,10 +5,7 @@
     font-family: 'Franklin Gothic Medium';
 }
 
-/* body{
-    height:100vh;
-    background-color: rgb(175, 100, 8);
-} */
+
 .container{
 position: absolute;
 transform: translate(-50% -50%);
@@ -263,4 +260,32 @@ margin-left: 1000px;
     width: 800px;
     margin-left:940px;
 }
+.circle{
+position: absolute;
+left: 9%;
+top: 30%;
+margin-top: 0px;
+margin-left: 0px;
+box-shadow: 0 2px 4px black;
+width: 80px;
+height: 80px;
+background-color:white;
+border-radius: 50%;
+padding:9px;
 
+
+
+}
+.circle i{
+    font-size: 4rem;
+    transition: .4s; 
+}
+
+.circle:hover i{
+color :red;
+}
+
+.fas{
+    color: red;
+    transition: .4s ;
+}
