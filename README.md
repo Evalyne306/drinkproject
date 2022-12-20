@@ -8,10 +8,11 @@ This is a cocktail app, where the end user will benefit in a number of ways.
 -They will be able to post their suggestions, their reviews, their complaints as well as their compliments on the contact us link on the home page.
 -The clients will be able to log in to the site and have an option of saving their logins.
 
+
 ## Getting started using a link
 To visit the web page directly you can use the link below or alternatively you can open using the terminal as directed below;
 
-*
+        https://evalyne306.github.io/drinkproject/
 
 ## Getting started using terminal
 -You will need a computer that runs on the following;

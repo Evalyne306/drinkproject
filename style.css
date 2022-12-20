@@ -196,6 +196,7 @@ h5{
     width: 100vh;
     height: 85vh;
     object-fit: cover;
+    margin-top: 0px;
   }
   #textbox{
     background: rgb(244, 217, 9);
@@ -221,3 +222,45 @@ text-align: justify;
 padding-left: 50px;
 padding-top: 100px;
 }
+/* #about{
+    background: rgb(253, 17, 209);
+    margin-left: 0px;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 0px; 
+    height: 100px;
+    width: 400px;
+    margin-left: 1000px;
+} */
+#about{
+text-align: end;
+margin-top:40px;
+font-size: 25px;
+font-style: italic;
+font-weight: bold;
+background-color: transparent;
+margin-left: 0px;
+padding-top: 0px;
+text-align: center;
+margin-bottom: 0px; 
+height: 800px;
+width: 800px;
+margin-left: 1000px;
+
+}
+#homeid{
+    text-align: end;
+    margin-top:30px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: transparent;
+    margin-left: 0px;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 0px; 
+    height:750px;
+    width: 800px;
+    margin-left:940px;
+}
+

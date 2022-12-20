@@ -13,12 +13,31 @@ const register = document.getElementById("register")
 const contactus = document.getElementById("contactus")
 const contact = document.getElementById("contact")
 const feedback = document.getElementById("feedback")
+const aboutus = document.getElementById("aboutus")
+const about = document.getElementById("about")
+const homeid = document.getElementById("homeid")
+const home = document.getElementById("home")
+//the home link onclick event listener
+home.addEventListener('click',(event)=>{
+    event.preventDefault()
+    homeid.style.display = "flex"
+    about.style.display = "none"
+})
+//the about us link on click event listener
+aboutus.addEventListener('click',(event)=>{
+    event.preventDefault()
+    about.removeAttribute("hidden")
+    about.style.display = "block"
+    homeid.style.display = "none"
 
+})
+//the dummy feedback form to fet user views 
 feedback.addEventListener('click',(event)=>{
     event.preventDefault()
     contactus.style.display = "none"
+    
 })
-
+//the contact link on click event listener
 contact.addEventListener('click',(e)=>{
 e.preventDefault() 
 
@@ -44,6 +63,7 @@ btnsignup.addEventListener('click',(event)=>{
     login.style.display = "block"
     app.style.display = "none"
     signup.style.display = "none"
+    
     
 })
 //login form displaying second
