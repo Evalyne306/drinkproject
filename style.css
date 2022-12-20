@@ -229,7 +229,6 @@ padding-top: 100px;
 text-align: end;
 margin-top:40px;
 font-size: 25px;
-
 font-weight: bold;
 background-color: transparent;
 margin-left: 0px;
@@ -250,11 +249,12 @@ color: rgb(18, 17, 16);
     font-weight: bold;
     background-color: transparent;
     text-align: center; 
-    height:790px;
-    width: 800px;
+    height:800px;
+    width: 850px;
     margin-left:1000px;
     margin-right: 50px;
     border: none;
+    object-fit: contain;
     
 }
 /*
