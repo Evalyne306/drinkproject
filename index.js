@@ -16,20 +16,26 @@ const aboutus = document.getElementById("aboutus")
 const about = document.getElementById("about")
 const homeid = document.getElementById("homeid")
 const home = document.getElementById("home")
-const btnvar = document.getElementById("like")
+const clicks = document.getElementById("clicks")
+const counter =document.getElementById("counter")
+var btnvar = document.getElementById("like"),
+  count = 0;
 
 //event listener for the like button, on click to change color to red
-like.addEventListener('click',(e)=>{
+btnvar.addEventListener('click',(e)=>{
     e.preventDefault()
    
+
         if(btnvar.style.color == "red"){
             btnvar.style.color = "grey"
+            if(btnvar.style.color = "red"){
+                count += 1;
+                counter.innerHTML = "LIKES: " + count;
+            }    
     }
     else {
         btnvar.style.color = "red"
-    }
-    
-
+        }
 })
 //the home link onclick event listener
 home.addEventListener('click',(event)=>{
@@ -93,12 +99,17 @@ btnlogin.addEventListener('click',(event)=>{
 const loadimages = document.getElementById("loadimages")
 loadimages.addEventListener('click',(event)=>{
 event.preventDefault()
-btnvar.style.color = "grey"
-getInfo()
+ btnvar.style.color = "grey"
+ const counter= document.getElementById("counter");
+ counter.innerHTML = "LIKES: 0"
+ count = 0;
+
+ getInfo()
+
 const ingredients = document.getElementById("ingredients")
 ingredients.innerHTML = "<h2>INGREDIENTS & INSTRUCTIONS.</h2>"
 const drinkSection = document.getElementById("drink-section")
-drinkSection.innerHTML = ""
+drinkSection.innerHTML = "" 
 
 })
 
@@ -207,7 +218,7 @@ ingredients.appendChild(instructions);
 
 };
 
-window.addEventListener("load", getInfo);
-
+// window.addEventListener("load", getInfo);
+getInfo()
 
 });
